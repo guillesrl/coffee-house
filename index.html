@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Coffee House - café de especialidad elaborado con pasión. Granos éticamente obtenidos de granjas sostenibles.">
+  <title>Coffee - Café de Especialidad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <header class="header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#" class="logo" aria-label="Inicio Coffee">Coffee.</a>
+      <button class="mobile-menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav-links">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-links desktop-nav-links">
+        <li><a href="#home" class="nav-link active">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Nosotros</a></li>
+        <li><a href="#menu" class="nav-link">Menú</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="mobile-nav-overlay" aria-hidden="true">
+    <ul class="nav-links" id="mobile-nav-links">
+      <li><a href="#home" class="nav-link active">Inicio</a></li>
+      <li><a href="#about" class="nav-link">Nosotros</a></li>
+      <li><a href="#menu" class="nav-link">Menú</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+  </div>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="line">Descubre la</span>
+          <span class="line">Preparación</span>
+          <span class="line">Perfecta</span>
+        </h1>
+        <p class="hero-subtitle">Café de especialidad elaborado con pasión</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">Ver Menú</a>
+          <a href="#contact" class="btn btn-secondary">Visítanos</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img class="hero-img" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Una taza bellamente elaborada de café de especialidad con arte latte sobre una mesa de madera" title="Una taza bellamente elaborada de café de especialidad con arte latte sobre una mesa de madera">
+          <div class="hero-image-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">Nuestra Historia</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Fundada en 2018, Coffee House trae los mejores cafés de especialidad de todo el mundo a tu vecindario. Nuestros granos son obtenidos éticamente de granjas sostenibles.</p>
+            <p>Cada taza que servimos cuenta una historia de dedicación, calidad y pasión. Desde la cuidadosa selección de granos hasta el preciso proceso de tueste, aseguramos que cada sorbo ofrezca una experiencia extraordinaria.</p>
+          </div>
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&q=80" alt="Granos de café recién tostados esparcidos en una bandeja" title="Granos de café recién tostados esparcidos en una bandeja">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu" aria-label="Coffee menu">
+      <div class="container">
+        <h2 class="section-title">Destacados</h2>
+        <div class="menu-grid">
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80" alt="Espresso intenso en taza blanca" title="Espresso intenso en taza blanca" loading="lazy">
+            <h3 itemprop="name">Espresso</h3>
+            <p class="description">Espresso intenso en taza blanca</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="3.50">3.50</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&q=80" alt="Latte cremoso con arte latte en vaso transparente" title="Latte cremoso con arte latte en vaso transparente" loading="lazy">
+            <h3 itemprop="name">Latte</h3>
+            <p class="description">Latte cremoso con arte latte en vaso transparente</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="4.50">4.50</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80" alt="Cappuccino clásico con arte de espuma" title="Cappuccino clásico con arte de espuma" loading="lazy">
+            <h3 itemprop="name">Cappuccino</h3>
+            <p class="description">Cappuccino clásico con arte de espuma</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="4.00">4.00</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80" alt="Café cold brew en vaso con hielo y rodaja de naranja" title="Café cold brew en vaso con hielo y rodaja de naranja" loading="lazy">
+            <h3 itemprop="name">Cold Brew</h3>
+            <p class="description">Café cold brew en vaso con hielo y rodaja de naranja</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="4.50">4.50</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&q=80" alt="Café mocha con virutas de chocolate y crema batida" title="Café mocha con virutas de chocolate y crema batida" loading="lazy">
+            <h3 itemprop="name">Mocha</h3>
+            <p class="description">Café mocha con virutas de chocolate y crema batida</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="5.00">5.00</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1581996323441-538096e854b9?w=400&q=80" alt="Café pour over preparado con granos frescos" title="Café pour over preparado con granos frescos" loading="lazy">
+            <h3 itemprop="name">Pour Over</h3>
+            <p class="description">Café pour over preparado con granos frescos</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="5.50">5.50</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=80" alt="Latte de matcha en tazón de cerámica tradicional" title="Latte de matcha en tazón de cerámica tradicional" loading="lazy">
+            <h3 itemprop="name">Matcha Latte</h3>
+            <p class="description">Latte de matcha en tazón de cerámica tradicional</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="5.50">5.50</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=400&q=80" alt="Latte de matcha tradicional en tazón de cerámica" title="Latte de matcha tradicional en tazón de cerámica" loading="lazy">
+            <h3 itemprop="name">Matcha</h3>
+            <p class="description">Latte de matcha tradicional en tazón de cerámica</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="5.00">5.00</span>
+            </p>
+          </article>
+          <article class="menu-card" itemscope itemtype="http://schema.org/Product">
+            <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=400&q=80" alt="Affogato con helado de vainilla y shot de espresso" title="Affogato con helado de vainilla y shot de espresso" loading="lazy">
+            <h3 itemprop="name">Affogato</h3>
+            <p class="description">Affogato con helado de vainilla y shot de espresso</p>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="6.00">6.00</span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Visítanos</h2>
+        <div class="contact-content">
+          <address class="contact-text">
+            Calle Café 123, Ciudad<br>
+            Abierto Diariamente: 7AM - 8PM
+          </address>
+          <div class="contact-actions">
+            <a href="tel:+1234567890" class="btn">Llámanos</a>
+            <a href="mailto:hello@coffee.com" class="btn btn-secondary">Envíanos un Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Coffee House. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
