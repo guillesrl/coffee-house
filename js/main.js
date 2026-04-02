@@ -354,4 +354,30 @@ document.addEventListener('visibilitychange', () => {
   }
 });
 
+// ========================================
+// CONTACT FORM HANDLING
+// ========================================
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    };
+
+    // Aquí puedes integrar con tu backend o servicio de email
+    console.log('Formulario enviado:', formData);
+
+    // Mostrar mensaje de éxito
+    alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+
+    // Limpiar formulario
+    contactForm.reset();
+  });
+}
+
 console.log('¡Sitio de Coffee cargado exitosamente! ☕');

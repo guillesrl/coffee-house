@@ -219,15 +219,52 @@
     <section id="contact" class="contact">
       <div class="container">
         <h2 class="section-title">Visítanos</h2>
-        <div class="contact-content">
-          <address class="contact-text">
-            Les Canals 4, Andorra<br>
-            Abierto Diariamente: 7AM - 8PM
-          </address>
-          <div class="contact-actions">
-            <a href="tel:+1234567890" class="btn">Llámanos</a>
-            <a href="mailto:guillesrl@gmail.com" class="btn btn-secondary">Envíanos un Email</a>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <address class="contact-text">
+              <strong>Dirección</strong><br>
+              Les Canals 4, Andorra<br><br>
+              <strong>Horario</strong><br>
+              Lunes - Domingo<br>
+              7:00 AM - 8:00 PM
+            </address>
+            <div class="contact-actions">
+              <a href="tel:+1234567890" class="btn">Llámanos</a>
+              <a href="mailto:guillesrl@gmail.com" class="btn btn-secondary">Email</a>
+            </div>
           </div>
+
+          <div class="contact-form-wrapper">
+            <h3 class="contact-form-title">Envíanos un mensaje</h3>
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.0824050173574!2d1.5196313!3d42.5063174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDLCsDMwJzIyLjciTiAxwrAzMScxMS44IkU!5e0!3m2!1ses!2sad!4v1234567890"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación de Coffee House en Les Canals 4, Andorra">
+          </iframe>
         </div>
       </div>
     </section>
@@ -238,6 +275,17 @@
       <p>&copy; 2026 Coffee House. Todos los derechos reservados.</p>
     </div>
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/1234567890?text=Hola,%20me%20gustaría%20saber%20más%20sobre%20Coffee%20House"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" width="24" height="24">
+      <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.973 0-7.51 6.11-13.618 13.618-13.618s13.618 6.108 13.618 13.618c0 7.51-6.11 13.618-13.618 13.618zM21.47 18.745c-0.353-0.176-2.088-1.030-2.413-1.147-0.324-0.117-0.559-0.176-0.794 0.176s-0.913 1.147-1.119 1.382c-0.206 0.235-0.412 0.265-0.765 0.088s-1.489-0.548-2.835-1.749c-1.048-0.935-1.755-2.089-1.961-2.442s-0.022-0.542 0.154-0.718c0.158-0.158 0.353-0.412 0.529-0.618s0.235-0.353 0.353-0.589c0.117-0.235 0.059-0.441-0.029-0.618s-0.794-1.913-1.088-2.619c-0.287-0.688-0.578-0.594-0.794-0.606-0.206-0.010-0.441-0.012-0.676-0.012s-0.618 0.088-0.941 0.441c-0.324 0.353-1.236 1.206-1.236 2.942s1.265 3.413 1.441 3.648c0.176 0.235 2.456 3.813 6.007 5.288 0.841 0.349 1.498 0.558 2.010 0.715 0.847 0.266 1.618 0.229 2.227 0.138 0.679-0.102 2.088-0.853 2.383-1.677s0.294-1.530 0.206-1.677c-0.088-0.147-0.324-0.235-0.676-0.412z"/>
+    </svg>
+  </a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
